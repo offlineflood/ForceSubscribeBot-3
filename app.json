@@ -1,0 +1,55 @@
+{
+    "name": "ForceSubscribe",
+    "description": "Bot untuk Memaksa Pengguna untuk bergabung ke channel.",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "pyrogram",
+        "pyrogrambot",
+        "telegram-bot",
+        "ForceSubBot"
+    ],
+    "repository": "https://github.com/farizjs/ForceSubscribe",
+    "success_url": "https://t.me/FlicksSupport",
+    "env": {
+        "API_HASH": {
+            "description": "API HASH dari my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "APP_ID": {
+            "description": "APP ID dari my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token, dapatkan dari @BotFather.",
+            "value": "",
+            "required": true
+        },
+        "UPDATES_CHANNEL": {
+            "description": "Bot Anda memperbarui nama pengguna saluran tanpa @",
+            "value": "",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "Sudo users (pergi ke @Missrose_Bot dan kirim /id untuk mendapatkan id Anda)",
+            "value": "",
+            "required": true
+        }
+    },
+    "addons": [
+    {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+  ],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
+
